@@ -28,6 +28,7 @@ S3Store.prototype.save = function(image) {
         var s3 = new AWS.S3({
           accessKeyId: options.accessKeyId,
           secretAccessKey: options.secretAccessKey,
+          sessionToken: options.sessionToken,
           bucket: options.bucket,
           region: options.region
         });
